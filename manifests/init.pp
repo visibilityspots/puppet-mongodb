@@ -31,7 +31,7 @@ class mongodb {
   #Class['mongodb::config']  ->
   Class['mongodb::service'] #->
   #Class['mongodb::monitor']
- 
+
 }
 
 # Define: mongodb::mongoimport
