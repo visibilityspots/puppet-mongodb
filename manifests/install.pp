@@ -4,11 +4,9 @@
 class mongodb::install {
 
   package {
-    'mongodb':
+    'mongo-10gen':
       ensure  => installed;
-    'mongodb-devel':
-      ensure  => installed;
-    'mongodb-server':
+    'mongo-10gen-server':
       ensure  => installed;
   }
 }

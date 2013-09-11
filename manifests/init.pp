@@ -17,20 +17,21 @@
 #  }
 #
 #
-class mongodb {
-  #class { 'mongodb::params': }
+
+class mongodb (
+  $dbpath         = $mongodb::params::dbpath,
+  ) inherits mongodb::params {
+
+  motd::register{'mongo':}
+
   class { 'mongodb::preinstall': }
   class { 'mongodb::install': }
-  #class { 'mongodb::config': }
+  class { 'mongodb::config': }
   class { 'mongodb::service': }
-  #class { 'mongodb::monitor': }
 
-  #Class['mongodb::params'] ->
   Class['mongodb::preinstall'] ->
   Class['mongodb::install'] ->
-  #Class['mongodb::config']  ->
-  Class['mongodb::service'] #->
-  #Class['mongodb::monitor']
-
+  Class['mongodb::config']  ->
+  Class['mongodb::service']
 }
 
