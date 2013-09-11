@@ -2,7 +2,7 @@
 #
 #
 class mongodb::preinstall {
-#  realize User_create['mongodb']
+  realize User_create['mongodb']
 
   package {
     'boost-filesystem':
