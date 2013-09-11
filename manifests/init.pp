@@ -24,12 +24,10 @@ class mongodb (
 
   motd::register{'mongo':}
 
-  class { 'mongodb::preinstall': }
   class { 'mongodb::install': }
   class { 'mongodb::config': }
   class { 'mongodb::service': }
 
-  Class['mongodb::preinstall'] ->
   Class['mongodb::install'] ->
   Class['mongodb::config']  ->
   Class['mongodb::service']

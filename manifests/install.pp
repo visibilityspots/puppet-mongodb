@@ -2,7 +2,6 @@
 #
 #
 class mongodb::install {
-
   package {
     'mongo-10gen':
       ensure  => installed;
