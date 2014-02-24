@@ -11,6 +11,7 @@ fork = true
 #port = 27017
 
 dbpath=<%= scope.lookupvar('mongodb::dbpath') %>
+smallfiles=<%= scope.lookupvar('mongodb::smallfiles') %>
 
 # location of pidfile
 pidfilepath = /var/run/mongodb/mongod.pid
