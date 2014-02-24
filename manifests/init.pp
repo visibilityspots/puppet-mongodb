@@ -20,6 +20,7 @@
 
 class mongodb (
   $dbpath         = $mongodb::params::dbpath,
+  $smallfiles     = $mongodb::params::smallfiles,
   ) inherits mongodb::params {
 
   motd::register{'mongo':}
