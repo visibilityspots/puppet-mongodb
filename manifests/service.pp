@@ -4,7 +4,8 @@
 class mongodb::service {
   service {
     'mongod':
-      ensure  => running,
-      enable  => true;
+      ensure    => 'running',
+      enable    => true,
+      subscribe => File['/etc/mongod.conf'];
   }
 }
