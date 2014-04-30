@@ -23,8 +23,6 @@ class mongodb (
   $smallfiles     = $mongodb::params::smallfiles,
   ) inherits mongodb::params {
 
-  motd::register{'mongo':}
-
   class { 'mongodb::install': }
   class { 'mongodb::config': }
   class { 'mongodb::service': }
