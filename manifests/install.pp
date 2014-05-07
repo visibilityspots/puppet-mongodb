@@ -1,11 +1,9 @@
 # Class: mongodb::install
 #
-#
+# Installation of the mongodb packages
 class mongodb::install {
   package {
-    'mongo-10gen':
-      ensure  => installed;
-    'mongo-10gen-server':
-      ensure  => installed;
+    'mongodb-org':
+      ensure  => 'installed';
   }
 }
