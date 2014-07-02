@@ -16,8 +16,8 @@ smallfiles=<%= scope.lookupvar('mongodb::smallfiles') %>
 # location of pidfile
 pidfilepath=/var/run/mongodb/mongod.pid
 
-# Listen to local interface only. Comment out to listen on all interfaces. 
-bind_ip=127.0.0.1
+# Listen to local interface only. Comment out to listen on all interfaces.
+bind_ip=<%= scope.lookupvar('mongodb::bind_ip') %>
 
 # Disables write-ahead journaling
 # nojournal=true

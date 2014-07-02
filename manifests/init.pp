@@ -21,6 +21,7 @@
 class mongodb (
   $dbpath         = $mongodb::params::dbpath,
   $smallfiles     = $mongodb::params::smallfiles,
+  $bind_ip        = $mongodb::params::bind_ip,
   ) inherits mongodb::params {
 
   class { 'mongodb::install': }
