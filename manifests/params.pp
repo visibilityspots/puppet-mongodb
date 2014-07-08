@@ -6,4 +6,5 @@ class mongodb::params {
   $dbpath     = '/var/lib/mongo'
   $smallfiles = true
   $bind_ip    = '127.0.0.1'
+  $limits     = false
 }

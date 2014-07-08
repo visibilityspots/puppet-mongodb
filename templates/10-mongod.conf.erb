@@ -1,0 +1,10 @@
+# This file is managed by PUPPET
+#
+# Recommended mongodb limits
+#
+# See: http://docs.mongodb.org/manual/reference/ulimit/
+
+mongod   soft    nofile   64000
+mongod   hard    nofile   64000
+mongod   soft    nproc    64000
+mongod   hard    nproc    64000
