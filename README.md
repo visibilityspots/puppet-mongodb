@@ -1,5 +1,7 @@
 # puppet-mongodb module
 
+![Progress](http://progressed.io/bar/45)   
+
 This module doesn't have nifty features to create mongodb databases and stuff. For the moment it's only used to install mongodb and configures the db.
 
 It needs some refactoring love.
