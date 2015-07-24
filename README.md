@@ -1,6 +1,6 @@
-# puppet-mongodb module
+# puppet-mongodb module [![Build Status](https://travis-ci.org/visibilityspots/puppet-mongodb.svg?branch=master)](https://travis-ci.org/visibilityspots/puppet-mongodb)
 
-![Progress](http://progressed.io/bar/45)   
+![Progress](http://progressed.io/bar/45)
 
 This module doesn't have nifty features to create mongodb databases and stuff. For the moment it's only used to install mongodb and configures the db.
 
